@@ -93,11 +93,12 @@ git = "https://github.com/matrix-org/matrix-rust-sdk"
 # wasm-bindgen
 unexpected_cfgs = { level = "warn", check-cfg = ['cfg(wasm_bindgen_unstable_test_coverage)'] }
 
-# MSC4350 work: build against the local matrix-rust-sdk checkout (same commit as Cargo.lock pins, plus our patch).
+# MSC4350 work: build against the experimental-msc4350 branch of this matrix-rust-sdk fork (which is the commit
+# pinned by Cargo.lock for v18.7.0, plus the MSC4350 patch).
 [patch."https://github.com/matrix-org/matrix-rust-sdk"]
-matrix-sdk-base = { path = "../matrix-rust-sdk/crates/matrix-sdk-base" }
-matrix-sdk-common = { path = "../matrix-rust-sdk/crates/matrix-sdk-common" }
-matrix-sdk-crypto = { path = "../matrix-rust-sdk/crates/matrix-sdk-crypto" }
-matrix-sdk-indexeddb = { path = "../matrix-rust-sdk/crates/matrix-sdk-indexeddb" }
-matrix-sdk-qrcode = { path = "../matrix-rust-sdk/crates/matrix-sdk-qrcode" }
-matrix-sdk-store-encryption = { path = "../matrix-rust-sdk/crates/matrix-sdk-store-encryption" }
+matrix-sdk-base = { git = "https://github.com/gchahcg/matrix-rust-sdk", branch = "msc4350-hardening" }
+matrix-sdk-common = { git = "https://github.com/gchahcg/matrix-rust-sdk", branch = "msc4350-hardening" }
+matrix-sdk-crypto = { git = "https://github.com/gchahcg/matrix-rust-sdk", branch = "msc4350-hardening" }
+matrix-sdk-indexeddb = { git = "https://github.com/gchahcg/matrix-rust-sdk", branch = "msc4350-hardening" }
+matrix-sdk-qrcode = { git = "https://github.com/gchahcg/matrix-rust-sdk", branch = "msc4350-hardening" }
+matrix-sdk-store-encryption = { git = "https://github.com/gchahcg/matrix-rust-sdk", branch = "msc4350-hardening" }

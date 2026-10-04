@@ -1373,6 +1373,7 @@ dependencies = [
 [[package]]
 name = "matrix-sdk-base"
 version = "0.18.0"
+source = "git+https://github.com/gchahcg/matrix-rust-sdk?branch=msc4350-hardening#79ff38a6eb0bbc5c42fde5b17b27de33769c647b"
 dependencies = [
  "as_variant",
  "async-trait",
@@ -1398,6 +1399,7 @@ dependencies = [
 [[package]]
 name = "matrix-sdk-common"
 version = "0.18.0"
+source = "git+https://github.com/gchahcg/matrix-rust-sdk?branch=msc4350-hardening#79ff38a6eb0bbc5c42fde5b17b27de33769c647b"
 dependencies = [
  "eyeball-im",
  "futures-core",
@@ -1420,6 +1422,7 @@ dependencies = [
 [[package]]
 name = "matrix-sdk-crypto"
 version = "0.18.0"
+source = "git+https://github.com/gchahcg/matrix-rust-sdk?branch=msc4350-hardening#79ff38a6eb0bbc5c42fde5b17b27de33769c647b"
 dependencies = [
  "aes",
  "as_variant",
@@ -1494,6 +1497,7 @@ dependencies = [
 [[package]]
 name = "matrix-sdk-indexeddb"
 version = "0.18.0"
+source = "git+https://github.com/gchahcg/matrix-rust-sdk?branch=msc4350-hardening#79ff38a6eb0bbc5c42fde5b17b27de33769c647b"
 dependencies = [
  "async-trait",
  "base64 0.23.1",
@@ -1525,6 +1529,7 @@ dependencies = [
 [[package]]
 name = "matrix-sdk-qrcode"
 version = "0.18.0"
+source = "git+https://github.com/gchahcg/matrix-rust-sdk?branch=msc4350-hardening#79ff38a6eb0bbc5c42fde5b17b27de33769c647b"
 dependencies = [
  "byteorder",
  "qrcode",
@@ -1536,6 +1541,7 @@ dependencies = [
 [[package]]
 name = "matrix-sdk-store-encryption"
 version = "0.18.0"
+source = "git+https://github.com/gchahcg/matrix-rust-sdk?branch=msc4350-hardening#79ff38a6eb0bbc5c42fde5b17b27de33769c647b"
 dependencies = [
  "base64 0.23.1",
  "blake3",
