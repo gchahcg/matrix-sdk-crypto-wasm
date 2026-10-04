@@ -92,3 +92,12 @@ git = "https://github.com/matrix-org/matrix-rust-sdk"
 # Workaround for https://github.com/rustwasm/wasm-bindgen/issues/4283, while we work up the courage to upgrade
 # wasm-bindgen
 unexpected_cfgs = { level = "warn", check-cfg = ['cfg(wasm_bindgen_unstable_test_coverage)'] }
+
+# MSC4350 work: build against the local matrix-rust-sdk checkout (same commit as Cargo.lock pins, plus our patch).
+[patch."https://github.com/matrix-org/matrix-rust-sdk"]
+matrix-sdk-base = { path = "../matrix-rust-sdk/crates/matrix-sdk-base" }
+matrix-sdk-common = { path = "../matrix-rust-sdk/crates/matrix-sdk-common" }
+matrix-sdk-crypto = { path = "../matrix-rust-sdk/crates/matrix-sdk-crypto" }
+matrix-sdk-indexeddb = { path = "../matrix-rust-sdk/crates/matrix-sdk-indexeddb" }
+matrix-sdk-qrcode = { path = "../matrix-rust-sdk/crates/matrix-sdk-qrcode" }
+matrix-sdk-store-encryption = { path = "../matrix-rust-sdk/crates/matrix-sdk-store-encryption" }
